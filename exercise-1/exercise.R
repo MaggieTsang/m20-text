@@ -9,13 +9,13 @@ library(stringr)
 library(ggplot2)
 
 # Load booksinto a dataframe using the austen_books() function
-
+books.df <- austen_books()
 
 # How many books are in the dataset?
-
+book.num <- select(books.df, book) %>% unique() %>% nrow()
 
 # Which book has the most lines?
-
+most.lines <-
 
 # Use the unnest_tokens function to generate the full list of words
 
